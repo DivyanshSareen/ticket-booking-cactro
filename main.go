@@ -23,6 +23,14 @@ func main() {
 
 	r := gin.Default()
 
+	r.GET("/", func(c *gin.Context) {
+		c.String(200, "Ticket Booking API — see /health for status")
+	})
+
+	r.GET("/health", func(c *gin.Context) {
+		c.JSON(200, gin.H{"status": "ok"})
+	})
+
 	// Public
 	r.POST("/auth/register", handlers.Register)
 	r.POST("/auth/login", handlers.Login)

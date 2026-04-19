@@ -2,6 +2,8 @@
 
 A REST API for an event booking system built with Go, Gin, SQLite, and JWT auth.
 
+**Live:** https://ticket-booking-cactro.onrender.com
+
 ## Features
 
 - Two user roles: **Organizer** and **Customer**
